@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 40%;
+    max-width: 120em;
+    padding: 2em;
+    overflow: hidden;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f0f0f0, #dedede);
+    box-shadow: 12px 12px 25px #a8a8a8,
+        -12px -12px 25px #ffffff;
+}
+
+.carousel .big-box {
+    width: 500%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 11px;
+    background: linear-gradient(145deg, #f0f0f0, #dedede);
+    box-shadow: 12px 12px 25px #a8a8a8,
+        -12px -12px 25px #ffffff;
+
+    padding: 2em;
+
+    transition: all .5s ease;
+    transform: translateX(-40%);
+
+}
+
+.carousel .img {
+    width: calc(100% / 5 - 3.5em);
+    max-height: 50vh;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 11px;
+
+}
+
+.carousel .slides {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+
+.carousel .slide {
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+    border-radius: 9px;
+    box-shadow: 11px 11px 23px #cacaca,
+        -11px -11px 23px #f6f6f6;
+}
+
+.carousel .slide.activo {
+    background-color: rgba(0, 0, 0, .2);
+}
